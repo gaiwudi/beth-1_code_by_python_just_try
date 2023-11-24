@@ -38,8 +38,11 @@ The beth-1 consists of future mutation prevalence prediction and vaccine strain 
 Step 6.1  Prediction of future mutation prevalence and obtain consensus strain:
 The prediction requires 3 year-data to burn in. Here we output year-to-year prediction from 2011/12 to 2019/20 season. The function ‘PreYearlyStrain’ allows to input genetic sequence, predicted season, average transition time and history EM set and output predicted consensus sequence and EM set by year. The predicted EM set will be used as part of predictor codon sites to select wildtype strains in the following procedure.
 
-Step 6.2  Select the optimal wild-type strain:
-The VE-GD model [2, 3] for influenza virus was best fitted when the genetic distance was evaluated on a subset of EMs residing on epitope A or B for H3N2 and the EMs on antigenic sites for pH1N1, referred to as the predictor codon sites. Here, the relative importance of HA and NA protein to VE are quantified by their effect size of genetic mismatch contributing to VE respectively [2, 3]. Two wildtype sequence files for HA and NA protein will be output.
+Step 6.2  Select the optimal wild-type strain integrating mutation information on both HA and NA (two-protein):
+The VE-GD model [2, 3] for influenza virus was best fitted when the genetic distance was evaluated on a subset of EMs residing on epitope A or B for H3N2 and the EMs on antigenic sites for pH1N1, referred to as the predictor codon sites. Here, the relative importance of HA and NA protein to VE are quantified by their effect size of genetic mismatch contributing to VE respectively [2, 3]. Two wildtype sequence files for HA and NA protein will be output. 
+
+Step 6.3 (optional) Select the optimal wild-type strain on single gene (single protein):
+This step enables wild-type strain selection based on predictor codon sites on single HA or NA gene. The results were referred to as beth-1 (single protein). Two wildtype sequence files of single HA model and single NA model will be output.
 
 Step 7.  Evaluate vaccine strain performance by genetic mismatch:
 This step aims to compute yearly epitope mismatch of predicted vaccine strains against circulating virus. We also provide sequences of WHO recommended vaccine strains for comparison. This will output yearly average epitope mismatch and standard deviation.
