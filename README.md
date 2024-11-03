@@ -1,4 +1,8 @@
 # beth-1
+This just fork from https://github.com/mwanglab/beth-1 . I jsut want to change the R code to the python code. Because I want to find a position in HK china.
+
+
+
 R code of a predictive evolutionary model for influenza virus by site-based mutation dynamics
 
 Input datasets:
