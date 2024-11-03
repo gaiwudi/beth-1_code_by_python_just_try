@@ -1,5 +1,5 @@
 # beth-1
-This just fork from https://github.com/mwanglab/beth-1 . I jsut want to change the R code to the python code. Because I want to find a position in HK china.
+This just fork from https://github.com/mwanglab/beth-1 . I jsut want to change the R code to the python code. Because I want to find a position in HK china. I have not to change. The github can not change it to private,so it is just a plan.
 
 
 
